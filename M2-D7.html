@@ -42,13 +42,15 @@
         background-color: crimson;
       }
       /*  EX8) Write a selector to target the second post author*/
-      a[href="author"] {
+      div.blog-post:nth-child(3) .blog-post-meta a {
         color: crimson;
       }
+
       /*  EX9) Write a selector to target the "back to top" link     #### EXTRA Try doing it without targeting the footer element directly */
-      a[href="btt"] {
+      p:first-child + p:last-child > a:only-child {
         color: crimson;
       }
+
       /*  EX10) Write a selector to target the footer*/
       .blog-footer {
         background-color: green !important;
